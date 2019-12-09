@@ -1,0 +1,40 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+
+
+<title></title>
+</head>
+<body>
+
+<!-- <div id="content" class="newyear"   value="Считать кроликов!">
+  <div class="ballPlaceTop" onClick="countBallsTop(event)"> </div>
+  <div class="ballPlace" onClick="countBalls(event)"> </div>
+
+</div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>    
+
+<script>
+ (function(){
+    $('body').append('<div id="content" class="newyear"   value="Считать кроликов!"> </div>');
+    $('#content').append('<div class="ballPlaceTop" id="ballPlaceTop"  onClick="countBalls(event)"></div>');
+    $('#content').append('<div class="ballPlace" id="ballPlace" onClick="countBalls(event)"> </div>');
+    $('#content').append('<div class="starPlace" id="starPlace" onClick="countBalls(event)"> </div>');
+    $('#content'). append('<div class="buttons"></div>');
+    $('.buttons'). append('<button class="clearButton" onClick=""> Нарядить снова!</button>');
+    // $('.buttons'). append('<button class="clearButton"> Сохранить результат! </button>');
+}()); 
+</script>
+<script src="js/script.js">
+ 
+</script>
+</body>
+</html>
